@@ -1,0 +1,94 @@
+.detail {
+  height: 100vh;
+  display: flex;
+  flex-direction: column; }
+  .detail .contents {
+    flex: 1;
+    overflow: scroll; }
+    .detail .contents .header {
+      background-size: cover;
+      background-position: center;
+      height: 15rem; }
+      .detail .contents .header .navigation {
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        height: 1rem; }
+        .detail .contents .header .navigation .right {
+          display: flex;
+          justify-content: space-between; }
+        .detail .contents .header .navigation .left {
+          display: flex;
+          justify-content: space-between; }
+        .detail .contents .header .navigation .elem {
+          height: 1rem;
+          width: 1rem;
+          padding: 20px 16px 20px 16px; }
+          .detail .contents .header .navigation .elem img {
+            height: 100%; }
+    .detail .contents h1 {
+      font-weight: 700;
+      font-size: 24px;
+      padding: 20px 16px 20px 16px; }
+    .detail .contents .col {
+      padding: 16px 16px 16px 16px; }
+  .detail footer {
+    padding: 12px 16px 12px 16px;
+    border-top: 1px solid #eee;
+    box-shadow: 2px -3px 3px -3px #ddd;
+    bottom: 0px;
+    display: flex;
+    justify-content: flex-end; }
+    .detail footer .button {
+      font-weight: bold;
+      text-align: center;
+      padding: 12px;
+      color: #fff;
+      background-color: #49a9d4;
+      border-radius: 5px; }
+
+.list .contents {
+  padding-top: 16px; }
+  .list .contents .table-title {
+    padding: 48px 12px 0px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .list .contents .table-title h2 {
+      font-size: 24px; }
+    .list .contents .table-title span {
+      font-size: 12px;
+      color: #999; }
+  .list .contents .table-list ul {
+    margin-bottom: 16px; }
+  .list .contents .table-list li {
+    border-bottom: 1px solid #eee; }
+  .list .contents .table-list a {
+    display: flex;
+    text-decoration: none;
+    padding: 12px; }
+    .list .contents .table-list a .icon {
+      border-radius: 30px;
+      width: 60px;
+      height: 60px;
+      object-fit: cover; }
+    .list .contents .table-list a dl {
+      flex: 1;
+      padding-left: 8px; }
+      .list .contents .table-list a dl dt {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 3px;
+        line-height: 1.1;
+        font-weight: 700; }
+        .list .contents .table-list a dl dt .time {
+          white-space: nowrap;
+          padding: 0px 0px 0px 4px;
+          font-weight: auto;
+          font-size: 11px;
+          color: #bbb; }
+      .list .contents .table-list a dl dd {
+        font-size: 11px;
+        color: #666; }
+  .list .contents .table-list a:visited {
+    color: black; }

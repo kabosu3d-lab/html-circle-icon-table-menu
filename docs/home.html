@@ -1,0 +1,62 @@
+<div class="list">
+    <div class="contents">
+        <div class="table-title">
+            <h2>NEW</h2>
+        </div>
+        <ul class="table-list">
+            <li ng-repeat="col in news">
+                <a ng-click="toDetail()">
+                    <div>
+                        <img class="icon" ng-src="{{col.img}}">
+                    </div>
+                    <dl>
+                        <dt>{{col.title}}
+                            <span class="time">{{col.time}}</span>
+                        </dt>
+                        <dd>{{col.subTitle}}
+                        </dd>
+                    </dl>
+                </a>
+            </li>
+        </ul>
+        <div class="table-title">
+            <h2>おすすめ</h2>
+        </div>
+        <ul class="table-list">
+            <li ng-repeat="col in recommended">
+                <a ng-click="toDetail()">
+                    <div>
+                        <img class="icon" ng-src="{{col.img}}">
+                    </div>
+                    <dl>
+                        <dt>{{col.title}}
+                            <span class="time">{{col.time}}</span>
+                        </dt>
+                        <dd>{{col.subTitle}}
+                        </dd>
+                    </dl>
+                </a>
+            </li>
+        </ul>
+        <div class="table-title">
+            <h2>学ぶ</h2>
+            <span>もっと見る ></span>
+        </div>
+        <ul class="table-list">
+            <li ng-repeat="col in meal">
+                <a ng-click="toDetail()">
+                    <div>
+                        <img class="icon" ng-src="{{col.img}}">
+                    </div>
+                    <dl>
+                        <dt>{{col.title}}
+                            <span class="time">{{col.time}}</span>
+                        </dt>
+                        <dd>{{col.subTitle}}
+                        </dd>
+                    </dl>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

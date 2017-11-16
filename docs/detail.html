@@ -1,0 +1,26 @@
+<div class="detail">
+    <div class="contents">
+        <div class="header" ng-style="{'background-image': 'url(' + news[0].mainImg + ')'}">
+            <div class="navigation">
+                <div class="right">
+                    <div class="elem" ng-click="back()">
+                        <img src="./img/icons/left.png">
+                    </div>
+                </div>
+                <div class="left">
+                    <div class="elem">
+                        <img src="./img/icons/upload.png">
+                    </div>
+                    <div class="elem">
+                        <img src="./img/icons/like.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1>{{news[0].title}}</h1>
+        <div class="col">{{news[0].content}}</div>
+    </div>
+    <footer>
+        <div class="button" ng-click="news[0].contentsAction()">はじめる</div>
+    </footer>
+</div>
